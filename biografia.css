@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FAZ O FOOTER IR PRO FINAL */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    /* layout vertical */
+    display: flex;
+    flex-direction: column;
+
+    /* fundo bonito */
+    background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+    color: white;
+}
+
+/* NAVBAR */
+.topo {
+    background: linear-gradient(90deg, #000, #ff8c42);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.topo a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.topo a:hover {
+    background-color: white;
+    color: #ff8c42;
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+    flex: 1; /* ESSA LINHA FAZ O FOOTER DESCER */
+
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 35px;
+
+    background: #2b2b2b;
+    border-radius: 15px;
+
+    box-shadow: 0 0 25px rgba(255,140,66,0.4);
+}
+
+/* TITULO */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff8c42;
+}
+
+/* TEXTOS */
+p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+/* PALAVRAS DESTACADAS */
+b {
+    color: #ff8c42;
+}
+
+/* BLOCO DE FRASE */
+.lema {
+    margin-top: 30px;
+    padding: 20px;
+    border-left: 5px solid #ff8c42;
+    background: rgba(255,140,66,0.1);
+    font-style: italic;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+.rodape {
+    background: linear-gradient(90deg, #ff8c42, #000);
+    text-align: center;
+    padding: 20px;
+}

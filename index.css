@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FOOTER SEMPRE EMBAIXO */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+
+    background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+    color: white;
+}
+
+/* NAVBAR SIMPLES (CENTRALIZADA) */
+.topo {
+    background: linear-gradient(90deg, #000, #ff8c42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.topo a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.topo a:hover {
+    background-color: white;
+    color: #ff8c42;
+}
+
+/* CONTAINER */
+.container {
+    flex: 1;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+
+    background: #2b2b2b;
+    border-radius: 15px;
+
+    box-shadow: 0 0 25px rgba(255, 140, 66, 0.4);
+}
+
+/* TITULO */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff8c42;
+}
+
+/* TEXTO */
+.intro {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* IMAGEM */
+.imagem-principal {
+    display: block;
+    margin: 0 auto 30px auto;
+    width: 280px;
+    max-width: 100%;
+    border-radius: 20px;
+    border: 4px solid #ff8c42;
+    transition: 0.3s;
+}
+
+.imagem-principal:hover {
+    transform: scale(1.05);
+}
+
+/* BOTÃO */
+.botao-link {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.botao-link a {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff8c42, #ff5e00);
+    color: black;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-link a:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+/* CURIOSIDADES */
+.curiosidades {
+    margin-top: 30px;
+}
+
+/* título central */
+.curiosidades h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff8c42;
+}
+
+/* LISTA NO CANTO ESQUERDO (CORREÇÃO) */
+.curiosidades ul {
+    max-width: 600px;
+    margin-left: 0;
+    padding-left: 20px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.curiosidades li {
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+.rodape {
+    background: linear-gradient(90deg, #ff8c42, #000);
+    text-align: center;
+    padding: 20px;
+}

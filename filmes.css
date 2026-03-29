@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FAZ O FOOTER FICAR NO FINAL */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+    color: white;
+}
+
+/* NAVBAR */
+.topo {
+    background: linear-gradient(90deg, #000, #ff8c42);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.topo a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.topo a:hover {
+    background-color: white;
+    color: #ff8c42;
+}
+
+/* CONTAINER */
+.container {
+    flex: 1;
+    max-width: 1100px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 35px;
+    background: #2b2b2b;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(255, 140, 66, 0.4);
+}
+
+/* TITULOS */
+h1 {
+    text-align: center;
+    color: #ff8c42;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 18px;
+    color: #f1f1f1;
+}
+
+/* LISTA */
+.lista-filmes {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* CARD */
+.card-filme {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 5px solid #ff8c42;
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.card-filme:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 18px rgba(255, 140, 66, 0.35);
+}
+
+.card-filme img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #ff8c42;
+    flex-shrink: 0;
+}
+
+.info-filme h2 {
+    color: #ff8c42;
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.info-filme p {
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+/* FOOTER */
+.rodape {
+    background: linear-gradient(90deg, #ff8c42, #000);
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .card-filme {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-filme img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .info-filme h2 {
+        font-size: 22px;
+    }
+}
